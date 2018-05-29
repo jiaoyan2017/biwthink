@@ -1,0 +1,14 @@
+dl,dd,dt,ul,li{list-style-position:outside;list-style-type:none;margin:0px;padding:0px;border:0px;white-space:normal;}
+#foc{display:none;}
+.avs,.avs img{width:762px;height:427px;}
+
+.avs{position:relative;overflow:hidden;}
+.avs dt{position:absolute;}
+.avs dt a{display:inline ;height:427px;width:762px;position:absolute;z-index:0;line-height:417px;padding: 0px 0px 0px 0px; }
+
+.avs dt a img{height:427px;width:762px;}
+.avs dd{position:absolute;line-height:12px;height:23px;width:297px;bottom:0px;_bottom:-1px;}
+.avs dd div{float:left;width:35px;height:14px;background:#324C6D;border:#CBCCCE 1px solid;text-align:center;font:10px Arial;padding-top:2px;margin-left:5px;cursor:pointer;color:#fff;}
+.avs dd ul{float:left;width:200px;}
+.avs dd ul li{width:14px;height:13px;line-height:0px;font:10px Arial;color:#fff;text-align:center;cursor:pointer;background:#324C6D;float:left;margin-left:4px;padding-top:1px;margin-top:3px;}
+.avs dd ul li.show{background:#324C6D;width:17px;height:15px;margin-top:0px;padding-top:2px;border:#ccc 1px solid;font-size:12px;font-weight:bold;}

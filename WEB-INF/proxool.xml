@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>    
+<proxool-config>  
+
+    <proxool>    
+        <alias>dbname</alias>    
+
+        <driver-url>jdbc:mysql://localhost:3306/work</driver-url>
+    		<driver-class>com.mysql.jdbc.Driver</driver-class>
+    		<driver-properties>
+      			<property name="useUnicode" value="true"/>
+      			<property name="characterEncoding" value="utf-8"/>
+                <property name="user" value="root"/>
+      			<property name="password" value="Flyfish217"/>
+    		</driver-properties>
+
+
+        <!--<driver-url>jdbc:mysql://localhost:3306/work</driver-url>
+        <driver-class>com.mysql.jdbc.Driver</driver-class>
+        <driver-properties>
+            <property name="useUnicode" value="true"/>
+            <property name="characterEncoding" value="utf-8"/>
+            <property name="user" value="root"/>
+            <property name="password" value="111111"/>
+        </driver-properties>-->
+
+        <house-keeping-sleep-time>90000</house-keeping-sleep-time>    
+        <maximum-new-connections>20</maximum-new-connections>    
+        <prototype-count>5</prototype-count>    
+        <maximum-connection-count>10</maximum-connection-count>
+        <minimum-connection-count>10</minimum-connection-count>    
+    </proxool>  
+
+ <!--  
+    <proxool>    
+        <alias>dbname</alias>    
+   	 		<driver-url>jdbc:mysql://192.168.200.18:3306/FetionLog</driver-url>
+    		<driver-class>com.mysql.jdbc.Driver</driver-class>
+    		<driver-properties>
+    		      			<property name="useUnicode" value="true"/>
+      			<property name="characterEncoding" value="utf-8"/> 
+      			<property name="user" value="NewAppUser"/>
+      			<property name="password" value="fetiondev@))%db"/>
+    		</driver-properties> 
+        <house-keeping-sleep-time>90000</house-keeping-sleep-time>    
+        <maximum-new-connections>20</maximum-new-connections>    
+        <prototype-count>5</prototype-count>    
+        <maximum-connection-count>1000</maximum-connection-count>    
+        <minimum-connection-count>10</minimum-connection-count>    
+    </proxool>  
+
+-->
+</proxool-config>     

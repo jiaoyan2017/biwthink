@@ -1,0 +1,164 @@
+/* --------------------------------------------------------------   
+   reset.css      不需要改动
+-------------------------------------------------------------- */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, code,
+del, dfn, em, img, q, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend
+ {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+
+
+table { border-collapse: separate; border-spacing: 0; }
+caption, th, td { text-align: left; font-weight: normal; }
+table, td, th { vertical-align: middle; }
+
+
+
+/* --------------------------------------------------------------    
+   typography   排版 
+-------------------------------------------------------------- */
+
+
+body {   
+  color:#333;
+  font-size:12px;
+  font-weight:400;  
+  font-family:"宋体";
+  line-height:18px;
+  background:#fff; 
+  color:#333;  
+  /*position:relative;*/
+}
+
+a img { border: none; }
+
+
+h1,h2,h3,h4 {font-size:14px;}
+
+a           { color: #15a; text-decoration: none; } 
+a:link, 
+a:visited 	{text-decoration:none;}
+
+a:focus,
+a:hover, 
+a:active 	{color:#580;text-decoration:underline;}
+
+em			{font-style:normal; font-weight:bold; color:#b11;}
+ul,ol ,li		{ list-style:none;}
+
+
+/* --------------------------------------------------------------    
+   form   表单
+-------------------------------------------------------------- */
+input.radio{ vertical-align:middle; padding:0; margin:0 4px 0 0;}
+input.input{ vertical-align:middle; border:1px solid #bbb; background:#fff;}
+input.checkbox{ vertical-align:middle; padding:0; margin:0 4px 0 0;}
+textarea{background:#fff;}
+
+
+
+
+
+
+/*--------------------------------------------------------------- 
+	Layout   主要是三栏，两栏的布局
+ ______________________________________________________________*/
+
+ /*=三栏   
+ * 
+ *=To do: 在具体使用中需要对每栏的宽度和padding，margin进行具体设置
+ ________________________________________________________________________________________*/
+
+.c3-a 	{float:left;}
+.c3-b 	{}
+.c3-c 	{float:right;}
+.c3-bc 	{float:right;}
+.c3-ab{float:left;}
+
+/*=两栏
+___________________________________________________*/
+.c2-a	{float:left;zoom:1;}
+	.c2-aa{ float:left;}
+	.c2-ab{ float:left;}
+.c2-b	{float:right; zoom:1;}
+.row {zoom:1;}
+
+ /* 清除浮动的一般办法 */
+.clear { clear:both; visibility:hidden; }
+.overflow {overflow: auto;zoom: 1;}
+
+
+.lt {float:left;}
+.rt {float:right;}
+
+/*==*/
+
+.hand { cursor:pointer; _cursor:hand;}
+
+
+/*--------------------------------------------------------------------------------
+	widget 
+___________________________________________________________________________________*/
+
+/*	Struct :box 原型：  
+	 用来作为承载的容器结构
+*/
+
+.box {zoom:1; margin-bottom:10px;}
+	.box .hd{ height:6px; position:relative; overflow:hidden;}
+	.box .cn{ padding-right:3px; zoom:1;}
+		.box .cn .cnhd{padding:0 10px 0 0; }
+			.box .cnhd h2{ float:left; padding:1px 10px 8px; line-height:20px; color:#470;}  /*=h2行高为20px， 距离顶部灰线7px，距底下内容8px(到下面内容的行高处)*/
+			.box .cnhd span{ float:right; padding-top:2px;}
+				.box .cnhd span a{ text-decoration:underline;}
+		.box .cn .cncn{ padding:0 10px 0; clear:both;}
+		.box .cn .cnft{ padding:0 10px 0; text-align:right;}
+			.box .cn .cnft a{text-decoration:underline;}
+			
+	.box .ft{ height:6px; position:relative; overflow:hidden;}
+ 
+/* component 模型  */	 
+	 
+.comp {}
+.comp li {}
+	.comp .pic{ display:block; }
+	/*=详细描述=*/
+	.comp .summary {}
+	
+	/*=简单描述=*/
+    .comp p{margin:3px 0;}
+    .comp em {
+        color: #ff6600;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 14px;
+        
+    }
+.comp del{color:#999; font-size:12px; }
+
+
+.box:after,.b-c:after,.c2-b:after,.c2-a:after,.row:after
+{
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;	
+}	 
+
+.clearfix:after {
+    content: "\0020"; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden; 
+    overflow:hidden; 
+}
+.clearfix {zoom:1;}

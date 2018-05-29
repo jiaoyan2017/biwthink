@@ -1,0 +1,8 @@
+body ,tr,td,div,form,input,select,a{font-size: 12px;}
+body{ background:#76a5db;}
+.main{ width:570px; height:288px; background:url(Images/bg01.png) no-repeat; margin:0 auto; padding:21px; margin-top:10%;}
+.main2{ width:570px; height:244px;background:url() no-repeat; overflow: inherit}
+.main3{ width:570px; height:44px; background:url(Images/bg03.png) repeat-x; text-align:center; line-height:44px;}
+.id01{ width:90px; height:20px; border:1px solid #7ea1b4; vertical-align:middle; background:#b5d6e7;}
+.id02{ vertical-align:middle}
+.id03{ width:74px; height:23px; background:url(Images/bt01.jpg); color:#FFF; font-weight:bold; border:0}

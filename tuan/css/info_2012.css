@@ -1,0 +1,225 @@
+/*20111214*/
+.p_info{width:780px;position:relative;}
+.p_info .photo{float:left;width:566px;height:570px;}
+.p_info .photo a{cursor:pointer;}
+.p_info .photo .bigPhoto{width:564px;height:376px;border:solid 1px #ccc;overflow:hidden;position:absolute;left:0;top:5px;text-align:center;}
+.p_info .photo .menu{position:absolute;left:0;top:400px;overflow:hidden;}
+.p_info .photo .menu ul{float:left;width:519px;height:107px;overflow:hidden;display:inline;}
+.p_info .photo .menu li{float:left;width:150px;height:100px;border:solid 1px #ccc;margin:5px 10px 0 11px;display:inline;overflow:hidden;text-align:center;}
+.p_info .photo .menu li.on{border:none;margin-top:0;background:url(http://imgn.jiatx.com/jiatx/mall/Shop/images_2012/info_bg1.gif);padding:6px 1px 1px 1px;}
+.p_info .photo .menu ul.left{width:12px;margin:5px 11px 0 0;height:102px;}
+.p_info .photo .menu ul.right{width:12px;margin:5px 0 0 12px;height:102px;}
+.p_info .photo  #img{width:564px;height:376px;}
+.p_info .photo  #Browser{border:1px solid #000;z-index:100;position:absolute;background:#555;}
+.p_info .photo  #mag{background-color:#fff;border:1px solid #ccc;overflow:hidden;z-index:100;}
+.p_info .photo .button{height:24px;position:absolute;left:0;top:536px;width:566px;text-align:right;}
+.p_info .photo .fenxiang{position:absolute;top:560px;left:320px;width:350px;border:solid 1px #6F5C55;background:#fff;padding-bottom:15px;}
+.p_info .photo .fenxiang span{display:block;height:23px;line-height:23px;background:url(http://imgn.jiatx.com/jiatx/mall/Shop/images_2012/info_bg3.gif);padding:0 10px;color:#fff;}
+.p_info .photo .fenxiang em{float:right;background:url(http://imgn.jiatx.com/jiatx/mall/Shop/images_2012/info_ico6.gif) left 5px no-repeat;cursor:pointer;padding-left:15px;}
+.p_info .photo .fenxiang p{padding:15px 10px 0 10px;width:330px;}
+.p_info .photo .fenxiang img,.p_info .photo .fenxiang input{vertical-align:middle;}
+.p_info .photo .fenxiang .input{width:220px;height:17px;line-height:17px;border:solid 1px #ccc;padding:0 1px;}
+
+.p_info .text{float:right;width:200px;line-height:28px;}
+.p_info .text h4{font-size:14px;overflow:hidden;margin-bottom:15px;}
+.p_info .text h4 em{display:block;font-size:12px;font-weight:normal;}
+.p_info .text ul{padding-bottom:15px;width:200px;}
+.p_info .text ul li{height:28px;clear:both;}
+.p_info .text ul li span{display:inline-block;margin-right:12px;}
+.p_info .text ul li cite{color:#b00;font-weight:bold;font-size:16px;font-family:Arial;}
+.p_info .text ul li em{color:#999;}
+.p_info .text ul li del{color:#999;}
+.p_info .text ul li ins{color:#b00;text-decoration:none;}
+.p_info .text ul li strong{font-size:20px;font-family:Arial;}
+.p_info .text ul li font{font-size:12px;cursor:pointer;background:url(http://imgn.jiatx.com/jiatx/mall/Shop/images_2012/top_ico1.gif) right 4px no-repeat;padding-right:10px;}
+.p_info .text ol{border:solid 1px #ccc;background:#f6f6f6;padding:20px 25px 0 25px;width:352px;}
+.p_info .text ol li{margin-bottom:15px;line-height:21px;color:#999;}
+.p_info .text ol li span{display:inline-block;vertical-align:top;width:60px;}
+.p_info .text ol li cite{display:inline-block;vertical-align:top;width:292px;}
+.p_info .text ol li em{display:inline-block;margin-right:6px;height:21px;}
+.p_info .text ol li em a{float:left;line-height:17px;border:solid 1px #ccc;background:#fff;padding:0 6px;margin:1px;}
+.p_info .text ol li em a.on,.p_info .text ol li em a:hover{border:solid 2px #b00;margin:0;text-decoration:none;color:#333;}
+.p_info .text ol li font{display:inline-block;font-size:12px;background:url(http://imgn.jiatx.com/jiatx/mall/Shop/images_2012/info_ico5.gif) 15px 1px no-repeat;padding-left:35px;vertical-align:middle;}
+.p_info .text ol li ins{text-decoration:none;color:#b00;}
+.p_info .text ol li img,.p_info .text ol li input{vertical-align:middle;}
+.p_info .text ol li .input{border:1px solid #ccc; text-align:center;margin:0 3px;width:30px;}
+.p_info .city{position:absolute;border:1px solid #aaa;width:380px;height:240px;top:21px;left:20px;background:#fff;}
+.p_info .city h6{background:url(http://imgn.jiatx.com/jiatx/mall/Shop/images_2012/info_bg2.gif);line-height:30px;padding-left:10px;font-size:12px;}
+.p_info .city dd{float:left;width:380px;height:210px;overflow:auto;line-height:20px;}
+.p_info .city table{width:363px;}
+.p_info .city th{width:48px;padding:6px 0 0 10px;font-weight:normal;vertical-align:top;text-align:right;}
+.p_info .city td{width:295px;padding:6px 10px 0 0;}
+.p_info .city td a:link,.city td a:visited,.p_info .city td a:hover{display:inline-block;margin-right:12px;text-decoration:underline;}
+
+.shop_left .sort_p{width:174px;margin-top:10px;border:solid 1px #e1e1e1;border-top:solid 5px #c00;padding:2px 5px;}
+.shop_left .sort_p h5{border-bottom:solid 1px #d7d7d7;line-height:33px;font-size:12px;padding-left:10px;margin-bottom:9px;}
+.shop_left .sort_p p{background:url(http://imgn.jiatx.com/jiatx/mall/Shop/images_2012/info_ico7.gif) 12px 8px no-repeat;padding:0 0 7px 55px;line-height:22px;min-height:44px;}
+.shop_left .sort_p p span{display:block;font-size:16px;font-family:Arial;color:#874949;font-weight:bold;}
+.shop_left .sort_p ul,.shop_left .sort_p ol{width:172px;margin:0 0 7px 2px;}
+.shop_left .sort_p li{float:left;height:27px;line-height:27px;width:78px;padding:1px 0 0 8px;overflow:hidden;color:#999;}
+.shop_left .sort_p ol li{width:164px;}
+.shop_left .list1{margin-top:10px;border:solid 1px #e1e1e1;width:184px;}
+.shop_left .list1 ul{padding:0 8px 8px 8px;width:168px;}
+.shop_left .list1 li{width:168px;height:156px;overflow:hidden;padding-top:8px;float:left;}
+.shop_left .list1 li span{display:block;width:168px;height:112px;text-align:center;overflow:hidden;}
+.shop_left .list1 li em{display:block;height:20px;overflow:hidden;padding-top:4px;color:#999;}
+.shop_left .list1 li ins{color:#b00;text-decoration:none;font-size:16px;font-family:Arial;font-weight:bold;}
+.shop_left .list1 li cite{display:block;height:20px;overflow:hidden;}
+
+.p_info3{width:782px;margin:10px 0;border:solid 1px #ccc;padding-bottom:10px;}
+.p_info3 h5{background:#f6f6f6;border-bottom:solid 1px #ccc;line-height:39px;height:39px;padding:0 10px;font-size:12px;font-weight:normal;color:#999;margin-bottom:10px;}
+.p_info3 h5 cite{float:right;height:21px;line-height:21px;background:url(http://imgn.jiatx.com/jiatx/mall/Shop/images_2012/info_bg4.gif);padding:1px 8px 0 8px;border:solid 1px #ccc;color:#333;margin-top:7px;}
+.p_info3 h5 em{color:#b00;}
+.p_info3 h5 strong{color:#333;}
+.p_info3 h4{font-size:12px;height:27px;margin:0 10px;width:762px;line-height:27px;font-weight:normal;border-bottom:dashed 1px #ccc;}
+.p_info3 h4 a{float:left;margin-right:3px;height:25px;border:solid 1px #ccc;border-bottom:0;padding:1px 10px 0 10px;font-weight:normal}
+.p_info3 h4 a.on,.p_info3 h4 a:hover{color:#333;text-decoration:none;background:#f6f6f6;font-weight:bold;}
+.p_info3 h4 em{color:#b00;}
+.p_info3 h4 span{float:right;color:#AA8080;}
+.buytime,.buyrule{margin:0 10px;width:762px;}
+.buytime ul{overflow:auto;max-height:145px;height:expression( this.scrollHeight > 145 ? "145px" : "auto" );}
+.buytime table{text-align:center;margin-top:1px;}
+.buytime th{padding:5px 0 3px 0;background:#fafafa;line-height:21px;font-weight:normal;}
+.buytime td{padding:5px 0 3px 0;line-height:21px;}
+.buytime td.name{padding:5px 5px 3px 5px;text-align:left;}
+.buytime td span{color:#b00;}
+.buyrule ol{background:url(http://imgn.jiatx.com/jiatx/mall/Shop/images_2012/info_bg5.gif);height:7px;line-height:7px;overflow:hidden;}
+.buyrule dl{background:url(http://imgn.jiatx.com/jiatx/mall/Shop/images_2012/info_bg6.gif);height:7px;line-height:7px;overflow:hidden;}
+.buyrule ul{background:url(http://imgn.jiatx.com/jiatx/mall/Shop/images_2012/info_bg7.gif) repeat-y;padding:5px 20px;}
+.buyrule ul h6{font-size:12px;border:solid 1px #d2d2d2;background:#f6f6f6;padding:1px 10px 0 10px;line-height:29px;height:29px;font-weight:normal;}
+.buyrule ul h6 span{float:right;color:#b00;}
+.buyrule ul p{margin-top:5px;}
+.buyrule ul p span{color:#b00;}
+.buyrule ul table{border-top:solid 1px #d2d2d2;border-left:solid 1px #d2d2d2;margin-top:5px;color:#b00;}
+.buyrule ul th{border-bottom:solid 1px #d2d2d2;border-right:solid 1px #d2d2d2;padding-top:5px;background:#f6f6f6;}
+.buyrule ul td{border-bottom:solid 1px #d2d2d2;border-right:solid 1px #d2d2d2;padding:5px 0 0 30px;}
+
+.p_info1{width:784px;margin-bottom:10px;}
+.p_info1 h4{border-bottom:solid 3px #6F5C55;font-size:12px;height:31px;margin-bottom:10px;font-weight:normal;line-height:29px;}
+.p_info1 h4 span{float:right;padding:1px 10px 0 0;width:645px;height:29px;border-top:solid 1px #ccc;border-right:solid 1px #ccc;margin-left:-2px;text-align:right;background:url(http://imgn.jiatx.com/jiatx/mall/Shop/images_2012/info_bg10.gif);}
+.p_info1 h4 font{color:#b00;font-size:12px;}
+.p_info1 h4 em{float:left;width:128px;margin-right:2px;padding-top:2px;height:29px;background:url(http://imgn.jiatx.com/jiatx/mall/Shop/images_2012/info_bg9.gif);text-align:center;font-weight:bold;color:#fff;}
+.p_info1 h4 a{float:left;width:126px;margin-right:2px;padding-top:1px;height:29px;background:url(http://imgn.jiatx.com/jiatx/mall/Shop/images_2012/info_bg8.gif);border:solid 1px #ccc;border-bottom:0;text-align:center;position:relative;}
+.p_info1 h4 a.on,.p_info1 h4 a:hover{color:#fff;text-decoration:none;background:url(http://imgn.jiatx.com/jiatx/mall/Shop/images_2012/info_bg9.gif);border:0;font-weight:bold;padding:2px 1px 0 1px;}
+.p_info1 h4 a.on font,.p_info1 h4 a:hover font{color:#fff;}
+.p_info1 h4 a img{position:absolute;top:1px;right:5px;}
+.p_info1 .pages{margin:10px 0 0 0;}
+.information ul{width:784px;padding-bottom:10px;overflow:hidden;}
+.information ul dl{width:813px;margin-right:-29px;}
+.information ul li{float:left;width:240px;padding-right:15px;margin-right:15px;height:29px;border-right:solid 1px #ccc;overflow:hidden;}
+.information ul li em{display:block;border-bottom:dashed 1px #ccc;line-height:25px;padding-left:5px;height:25px;overflow:hidden;}
+.information ol{padding-bottom:10px;line-height:25px;width:784px;overflow:hidden;}
+.information ol img{clear:both;max-width:784px;width:expression(onload=function() {this.style.width=(this.offsetWidth > 784) ? "784px" : "auto"});}
+.information ol p{margin-top:10px;}
+.information ol .tit{background:#e6e6e6 url(http://imgn.jiatx.com/jiatx/mall/Shop/images_2012/info_ico13.gif) no-repeat 15px 5px;padding:1px 10px 0 45px;line-height:31px;height:31px;overflow:hidden;}
+.information ol .tit span{font-size:14px;font-weight:bold;color:#6C5D58;padding-right:15px;}
+.information ol .text{margin-top:20px;padding-bottom:15px;border-bottom:dashed 1px #ccc;}
+.information ol .text span{display:inline-block;padding:0 17px 0 2px;width:52px;vertical-align:top;}
+.information ol .text em{display:inline-block;width:700px;}
+.information ol .text strong{display:block;height:25px;margin:-5px 0 5px 0;overflow:hidden;}
+.information ol .text cite{display:block;line-height:22px;}
+.information ol .text font{font-size:12px;font-weight:normal;}
+.question{border:solid 1px #ccc;padding:10px 20px;width:742px;}
+.question li{padding:5px 0;border-bottom:dashed 1px #ccc;}
+.question li strong{display:block;}
+.question li p{text-indent:21px;}
+.question li a:link,.question li a:visited,.question li a:hover{color:#b00;text-decoration:underline;}
+.record table{text-align:center;}
+.record th{border-bottom:dashed 1px #ccc;font-weight:normal;}
+.record td{padding:11px 0 9px 0;line-height:21px;border-bottom:dashed 1px #ccc;}
+.record td.name{padding:11px 5px 9px 5px;text-align:left;}
+.record td em{color:#999;}
+
+.evaluation ol{height:20px;overflow:hidden;padding:8px 0;}
+.evaluation ol em{font-family:Arial;font-size:20px;font-weight:bold;color:#b00;font-style:italic;display:inline-block;vertical-align:middle;margin-top:-8px;}
+.evaluation ol span{width:86px;display:inline-block;height:20px;overflow:hidden;vertical-align:middle}
+.evaluation ol cite{float:left;height:15px;background:url(http://imgn.jiatx.com/jiatx/mall/Shop/images_2012/star5.gif) left;}
+.evaluation ol del{float:left;height:15px;background:url(http://imgn.jiatx.com/jiatx/mall/Shop/images_2012/star0.gif) right;}
+.evaluation dl{margin-top:5px;border-bottom:dashed 1px #ccc;line-height:27px;background:#fafafa;height:27px;padding-top:1px;}
+.evaluation dl span{float:left;width:450px;text-align:center;}
+.evaluation dl em{float:left;width:100px;text-align:center;}
+.evaluation dl cite{float:right;padding-right:10px;width:218px;text-align:right;height:27px;font-weight:normal;}
+.evaluation dl font{color:#b00;font-size:12px;}
+.evaluation dl select{float:right;margin:4px 0 0 6px;font-size:12px;}
+.evaluation ul li{padding:0 10px 15px 10px;margin-top:15px;border-bottom:dashed 1px #ccc;}
+.evaluation ul span{float:left;width:440px;color:#999;}
+.evaluation ul em{float:left;width:100px;text-align:center;}
+.evaluation ul cite{float:right;width:218px;text-align:right;color:#999;}
+.evaluation ul p{float:left;width:764px;padding-top:5px;}
+.evaluation ul dt{margin-top:10px;}
+.evaluation ul dt span{width:540px;}
+.assessment ul strong{display:block;margin:18px 5px -5px 5px;font-size:14px;}
+.assessment ul li{width:774px;border-bottom:dashed 1px #ccc;padding:15px 5px;line-height:22px;}
+.assessment ul li span{display:block;font-size:14px;margin-bottom:6px;}
+.assessment ul li span a:link,.assessment ul li span a:visited,.assessment ul li span a:hover{color:#b00;}
+
+.consult h5{font-size:12px;border-bottom:dashed 1px #ccc;font-weight:normal;padding:5px 0 12px 0;}
+.consult h5 a{display:inline-block;margin-right:12px;}
+.consult h5 a.on:link,.consult h5 a.on:visited,.consult h5 a.on:hover{color:#b00;}
+.consult ul li{width:784px;border-bottom:dashed 1px #ccc;}
+.consult ul li del{float:right;text-decoration:none;color:#999;width:120px;padding:5px 0;}
+.consult ul li span{float:left;font-size:12px;width:598px;padding:5px 0;}
+.consult ul li span a:link,.consult ul li span a:visited,.consult ul li span a:hover{color:#b00;}
+.consult ul li dl{padding:10px 10px 10px 40px;width:734px;background:#fafafa url(http://imgn.jiatx.com/jiatx/mall/Shop/images_2012/info_ico8.gif) 15px 15px no-repeat;}
+.consult ul li dt{padding:10px 10px 10px 40px;width:734px;}
+.consult ol{width:784px;}
+.consult ol li{padding:8px 0;}
+.consult ol li span{padding-right:20px;}
+.consult ol li input{width:14px;height:14px;vertical-align:middle;}
+.consult ol li font{color:#f60;padding:0 5px 0 30px;font-size:12px;}
+.consult ol li em{display:inline-block;background:#FFFFCF;border:solid 1px #FDE674;height:20px;padding:2px 10px 0 10px;}
+.consult ol li a:link,.consult ol li a:visited,.consult ol li a:hover{color:#b00;}
+
+.combination{width:784px;margin-bottom:10px;}
+.combination h4{border-bottom:solid 3px #6F5C55;font-size:12px;height:31px;font-weight:normal;line-height:29px;}
+.combination h4 em{float:left;width:128px;padding-top:2px;height:29px;background:url(http://imgn.jiatx.com/jiatx/mall/Shop/images_2012/info_bg9.gif);text-align:center;font-weight:bold;color:#fff;}
+.combination h4 span{float:right;padding:1px 10px 0 20px;width:625px;height:29px;border-top:solid 1px #ccc;border-right:solid 1px #ccc;}
+.combination h4 span a.on:link,.combination h4 span a.on:visited,.combination h4 span a.on:hover{font-weight:bold;color:#b00;}
+.combination ul{border:solid 1px #ccc;border-top:0;width:782px;}
+.combination ol{float:left;width:602px;height:157px;overflow:auto;padding:15px 15px 0 15px;}
+.combination dl{height:140px;overflow:hidden;}
+.combination dl li{float:left;width:128px;height:140px;line-height:16px;display:inline;}
+.combination dl li span{display:block;height:84px;width:126px;text-align:center;border:solid 1px #ccc;margin-bottom:6px;overflow:hidden;}
+.combination dl li font{display:none;}
+.combination dl li font input{width:14px;height:14px;float:left;}
+.combination dl li cite{float:left;width:128px;height:32px;overflow:hidden;}
+.combination dl li em{float:left;height:16px;overflow:hidden;}
+.combination dl li ins{text-decoration:none;color:#874949;font-weight:bold;}
+.combination dl li.on{padding-left:30px;background:url(http://imgn.jiatx.com/jiatx/mall/Shop/images_2012/info_ico10.gif) 4px 32px no-repeat;}
+.combination dl li.off{padding-left:30px;background:url(http://imgn.jiatx.com/jiatx/mall/Shop/images_2012/info_ico11.gif) 4px 32px no-repeat;}
+.combination dl li.on font,.combination dl li.off font{float:left;display:inline;width:20px;}
+.combination dl li.on cite,.combination dl li.off cite{width:108px;}
+.combination dl li.on em,.combination dl li.off em{padding-left:20px;}
+.combination p{float:left;height:162px;padding:10px 0 0 10px;width:129px;border-left:dashed 1px #ccc;}
+.combination p span{display:block;font-size:14px;line-height:30px;font-weight:bold;}
+.combination p em{line-height:26px;display:block;height:26px;overflow:hidden;}
+.combination p cite{text-align:center;display:block;padding-top:5px;}
+.combination p ins{color:#b00;font-size:14px;font-weight:bold;text-decoration:none;}
+.combination p font{display:block;border:solid 1px #d2d2d2;background:#f1f1f1 url(http://imgn.jiatx.com/jiatx/mall/Shop/images_2012/info_ico12.gif) 5px center no-repeat;padding-left:25px;width:120px;margin:-10px 0 0 -9px;position:relative;}
+
+.p_info2{width:782px;margin-bottom:10px;border:solid 1px #ccc;}
+.p_info2 h5{background:url(http://imgn.jiatx.com/jiatx/mall/Shop/images_2012/info_ico9.gif) 15px 8px no-repeat;padding:9px 10px 0 45px;font-size:12px;height:26px;border-bottom:solid 1px #ccc;}
+.p_info2 h5 em{float:right;font-weight:normal;}
+.p_info2 ul{padding:20px 11px 15px 11px;width:760px;}
+.p_info2 li{float:left;padding:0 10px;width:170px;height:198px;}
+.p_info2 li span{display:block;width:168px;height:112px;border:solid 1px #bbb;text-align:center;overflow:hidden;}
+.p_info2 li font{display:block;margin:-122px 0 0 -12px;height:122px;_position:relative;}
+.p_info2 li em{display:block;height:32px;line-height:16px;overflow:hidden;padding-top:8px;}
+.p_info2 li cite{display:block;margin-top:4px;height:20px;overflow:hidden;}
+.p_info2 li cite ins{color:#874949;font-weight:bold;text-decoration:none;}
+.p_info2 li p{height:20px;overflow:hidden;}
+
+.info_kz .photo{height:388px;}
+.info_kz .text ol{padding:0 15px;width:372px;margin-top:15px;line-height:24px;}
+.info_kz .text ol p{padding:10px 0;}
+.info_kz .text ol p strong{display:block;padding-bottom:5px;}
+.info_kz .text ol p a:link,.info_kz .text ol p a:visited{text-decoration:underline;}
+.info_kz .text ol p ins{text-decoration:none;color:#b00;}
+.info_kz1{padding-top:10px;float:none;width:980px;}
+.info_kz1 .p_info1{width:980px;}
+.info_kz1 .p_info1 h4 span{width:841px;}
+.info_kz1 .information ul{width:980px;}
+.info_kz1 .information dl{width:1008px;margin-right:-28px;}
+.info_kz1 .information ul li{width:221px;}
+.info_kz1 .information ol{width:980px;}
+.info_kz1 .information ol img{max-width:980px;width:expression(onload=function() {this.style.width=(this.offsetWidth > 980) ? "980px" : "auto"});}

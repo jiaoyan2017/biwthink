@@ -1,0 +1,461 @@
+/*=
+	首页左侧分类
+--------------------------------------------------------------------------------------------------------------------------------*/
+.category{ }
+	.category .cn{margin-top:-5px;height:515px;+height:520px;}
+		.category .cn .cnhd h2{ padding-bottom:1px;}
+		.category .cn .cnhd span{ padding-top:2px;}
+			.category .cncn h3{line-height:32px; height:32px; padding:1px 0; margin:5px 10px 0; background:url(../image/bg.gif) right -359px no-repeat;}
+				.category .cncn h3 span{ color:#0865B2; background:url(../image/icon.gif) -9999px -9999px no-repeat;}
+
+	.category .cn .cncn{ height:504px; *height:520px; _height:512px;}
+	.category .cn .cncn li .item{padding-top:2px;}
+	.cateItem{height:20px;}
+	.category .cn .cnft { padding:0 10px 8px;}
+
+	/*=
+		鼠标HOV样式
+	*/
+	.category .cncn .hpOver h3{ margin:5px 0 0; padding:0; position:relative; border-top:1px solid #0165bd; border-left:1px solid #0165bd; border-bottom:1px solid #0165bd;   background:#fff url(../image/bg.gif) left -612px no-repeat; z-index:201;}
+		.category .cncn .hpOver h3 span{ padding-left:35px; color:#470;}
+		.category .cncn .hpOver h3.chufang span{ background:url(../image/icon.gif) left -518px no-repeat;}
+	.category .cncn .hpOver h3.weisheng span{ background:url(../image/icon.gif) left -551px no-repeat;}
+	.category .cncn .hpOver h3.kewo span{ background:url(../image/icon.gif) left -585px no-repeat;}
+	.category .cncn .hpOver h3.menchuang span{ background:url(../image/icon.gif) left -618px no-repeat;}
+	.category .cncn .hpOver h3.zhineng span{ background:url(../image/icon.gif) left -655px no-repeat;}
+	.category .cncn .hpOver h3.shuidian span{ background:url(../image/icon.gif) left -689px no-repeat;}
+	.category .cncn .hpOver h3.jujia span{ background:url(../image/icon.gif) left -724px no-repeat;}
+
+	
+	/*=
+		左侧分类交互出现的二级分类
+	--------------------------------------------------------------------*/
+	.category .secCate{ padding:10px 0;}
+		.category .secCate.width1{ width:auto;}
+		.category .secCate.width2{ width:auto;}
+		.category .secCate .item{ padding:0 10px; float:left; background:none;}
+		.category .secCate .item.width1{ width:auto;}
+		.category .secCate .item.width2{ width:auto;}
+			.category .secCate .item .cncn{ padding:0 0 10px; height:auto;}
+		.category .secCate .first{ background:url(../image/bg_secCateline.gif) right center no-repeat;}
+		.category .secCate .last{ padding-right:0;}
+			.category .secCate .item h3{ margin:0; border:0; line-height:18px; _height:18px; font-size:12px; background:none; color:#470;}
+			.secCate .item ul{ width:104px; float:left;}
+				.secCate .item ul li{ float:none; width:104px; overflow:hidden; margin-right:0; border-bottom:0;}
+
+				.category .secCate .item .cnft{ padding:0;}
+					.category .secCate .item .cnft a{ margin:0;}
+	
+	/*=Start 
+		分类的鼠标交互样式（容器的样式）  等设计好了改这里
+	----------------------------------------------------- ----------------*/
+	.category .hpOver{ position:relative;}
+	.category .h-t{ cursor:pointer;}
+	.category .h-c{ left:165px; top:0; z-index:200;}
+
+		
+	.category,.category .cn,.category .cn .cncn,.category .cncn ul,.category .cncn li{ z-index:200;}
+		.category .item{ padding:0 0 11px 10px; background:url(../image/bg_itemline_cat.gif) center bottom no-repeat;}
+		.category .item div{height:20px;overflow:hidden;}
+		.category .cateItemLast{background:none;}
+		.category .last{ padding-bottom:0; background:none;}
+			.category .item a{ line-height:24px; display:inline-block;}
+				.category .item .mr{margin-right:4px;}
+
+/*=
+	首页左侧网友叽喳
+--------------------------------------------------------------------------------------------------------------------------------*/	
+.formInfo{}
+	.formInfo .cn{ height:140px;}
+	.formInfo .item{ margin-top:11px; padding-bottom:11px; background:url(../image/bg_itemline_grays.gif) center bottom no-repeat;}
+	.formInfo .first{ margin-top:0;}
+	.formInfo .last{ padding-bottom:0; background:none;}
+		.formInfo .item h2{ padding:1px 10px 8px; line-height:20px;color:#598a21;}
+		.formInfo .item .cncn{ padding-bottom:0;}
+		.formInfo .item p,
+		.formInfo .item li{ padding-bottom:3px;padding-left:8px; width:158px; word-break:break-all; overflow:hidden; background:url(../image/bg.gif) left -803px no-repeat;}
+			.formInfo .item li.last{ padding-bottom:0;}
+			.formInfo .item li span{ color:#999;}
+		.formInfo .item .half{}
+			.formInfo .item .half li{ width:48%; float:left; padding-left:0; background:none;}
+
+			.formInfo .last li{height:18px; overflow:hidden;}
+	.formInfo .cn .cnft{ padding-top:11px; text-align:left;}
+
+
+/*=
+	首页最右侧网站公告  活动公告
+--------------------------------------------------------------------------------------------------------------------------------*/
+.callBoard{height:215px;margin-bottom:12px;}
+	.callBoard .cn{height:205px;}
+	.callBoard div.cncn ul  li{height:18px;overflow:hidden;margin-top:5px;background:none;padding-left:0;}
+	.side ul li,
+	.side p{ padding-bottom:3px; }
+	.side ul li{padding-left:8px; background:url(../image/bg.gif) left -803px no-repeat;}
+		.side ul li.last{ background:url(../image/bg.gif) left -803px no-repeat;}
+		.side ul li span{ margin-left:4px; color:#f60;}
+	.side .item{ margin-bottom:11px; background:url(../image/bg_itemline_graym.gif) center bottom no-repeat;}
+		.side .item h2{padding:1px 10px 8px; line-height:20px; color:#470;}
+		.side .item .cncn{ padding-bottom:11px;}
+	.side .last{ padding-bottom:0; margin:0; background:none;}
+		.side .last .cncn{ padding-bottom:0;}
+
+	.mainBox .cn div.bg_none{background:none;}
+	.local_bottom{background:url(../image/locale_activity.gif) 0 0 no-repeat;height:5px;margin:10px 0 10px 11px;}
+    .callBoard .cnhd a{float:right;}
+	
+	
+	
+
+
+
+/*=
+	首页右侧抢购，拼购，促销
+--------------------------------------------------------------------------------------------------------------------------------*/
+.qiangGou,
+.pingGou,
+.cuxiao{position:relative;}
+	.qiangGou .icon,
+	.pingGou .icon,
+	.cuxiao .icon{ position:absolute; width:52px; height:52px; left:0; top:0; background:url(../image/icon.gif) -9999px -9999px no-repeat;}
+	.qiangGou .icon{ background-position:left -1009px; }
+	.pingGou .icon{ background-position:left -1081px; }
+	.cuxiao .icon{ background-position:left -1153px; }
+
+	.qiangGou .iconState,
+	.pingGou .iconState{position:absolute; width:37px; height:43px; right:2px; bottom:0;}
+	.qiangGou .iconState{background:url(../image/icon.gif) left -1226px no-repeat;}
+	.pingGou .iconState{background:url(../image/icon.gif) left -1286px no-repeat;}
+
+	.qiangGou .cn .cnhd,
+	.pingGou .cn .cnhd{ line-height:18px;}
+	.index_g_b{height:19px;overflow:hidden;}
+	.proState{ padding:7px 0 8px; text-align:center;}
+		.proState em{ font-size:14px;}
+	.buyState{ padding:7px 0 2px; text-align:left;  border-top:1px dashed #ddd;}
+		.index_g_b .buyState{padding:0;border:none;}
+		.buyState span{ color:#999;}
+
+	.cnhd .timeRem{ padding:0 0 0 52px; text-align:right;}
+		.cnhd .timeRem span{ float:none; margin:0 0 0 8px;}
+		.cnhd .indexPG span{margin:0 4px 0 0;}
+		.index_pg_con{height:246px;_height:241px;_width:149px;_overflow:hidden;}
+		.box .cn .index_pg_con{padding-left:8px;}
+		.box .cn .index_pg_con h4{height:36px;overflow:hidden;padding:0;}
+		.box .cn .index_pg_con .goodsName{padding:0;}
+		.box .cn .index_pg_con .goodsCard{text-align:center;}
+			.cnhd .timeRem em{ margin:0; padding:0; font-size:14px;}
+
+	.qiangGou .goodsCard,
+	.pingGou .goodsCard{ padding-bottom:6px;}
+		.jQshowcn{height:20px;overflow:hidden;}
+		.qiangGou .goodsCard .goodsImg,
+		.pingGou .goodsCard .goodsImg { position:relative;}
+
+		.qiangGou .goodsCard .goodsName,
+		.pingGou .goodsCard .goodsName,
+		.cuxiao .goodsCard .goodsName{ padding-top:5px;}
+			.qiangGou .goodsCard .goodsName h4,
+			.pingGou .goodsCard .goodsName h4,
+			.cuxiao li h4{ font-size:12px; font-weight:normal;}
+
+	.cuxiao{}
+		.cuxiao .cnhd h2{ padding-left:62px;}
+	.cuxiao .cncn ul{ padding-top:15px;}
+		.cuxiao .cncn li{ padding:6px 0 7px; _width:206px; background:url(../image/bg_itemline_graym.gif) center bottom no-repeat; cursor:pointer;}
+		.cuxiao .cncn li.last{ background:none;}
+			.cuxiao li .goodsCard{ display:none;}
+		
+		
+		.cuxiao .cncn li.current,
+		.cuxiao .cncn li.hov{ padding:0;}
+			.cuxiao .cncn li.current h4,
+			.cuxiao .cncn li.hov h4{ display:none;}
+			.cuxiao .cncn li.current .goodsName h4,
+			.cuxiao .cncn li.hov .goodsName h4{ display:block;}
+			.cuxiao .cncn li.current .goodsCard,
+			.cuxiao .cncn li.hov .goodsCard{ display:block; padding:11px 0;}
+
+			
+	
+
+
+/*=
+	首页主内容 底端服务承诺
+--------------------------------------------------------------------------------------------------------------------------------*/
+.server{ clear:both;}
+	.server .cn .cnhd{ padding:0;}
+	.server .cn h2{ margin-bottom:0; text-indent:-9999px;}
+	.server ul{ padding-top:3px;}
+	.server ul li{ padding:0 0 0 25px; float:left; width:163px; height:65px; text-indent:-9999px;}
+		.server .tousu{ background:url(../image/bg_serverTousu.gif) right top no-repeat;}
+		.server .baozhang{ background:url(../image/bg_server30Baozhang.gif) right top no-repeat;}
+		.server .tuihai{ background:url(../image/bg_serverTuihuo.gif) right top no-repeat;}
+		.server .huanhuo{ background:url(../image/bg_serverHuanhuo.gif) right top no-repeat;}
+		.server .rexian{ background:url(../image/bg_serverRexian.gif) right top no-repeat;}
+
+/*=
+	首页 中间主题营销
+	z-index:21; height:213px; 
+--------------------------------------------------------------------------------------------------------------------------------*/
+.mainAd{ margin-bottom:7px;}
+	.mainAd .hd{ z-index:12;}
+	.mainAd .cn{ margin-top:-4px;overflow:hidden;}
+		.mainAd .cn .cncn{ padding:0 1px;z-index:21; position:relative;}
+			.mainAd .cn .cncn .conerL{ width:5px; height:6px; left:0; top:0; background:url(../image/bg.gif) left -399px no-repeat; z-index:102;}
+			.mainAd .cn .cncn .conerR{ width:7px; height:6px; right:0; top:0; background:url(../image/bg.gif) -5px -399px no-repeat;z-index:102;}
+			.mainAd .cn .navTabcn{ display:none;height:347px;overflow:hidden;}
+				.mainAd .cncn img{ width:764px; height:347px;}
+		.mainAd .cn .cnft{ padding:0;z-index:21;}
+			.mainAd .navTab{ padding:0 0px;z-index:21;}
+				.mainAd .navTab li{ position:relative; height:32px; line-height:32px; float:left; text-align:center; border-right:1px solid #ddd; border-top:1px solid #ddd; background:#f1f1f1 url(../image/bg.gif) left -1011px repeat-x; cursor:pointer;z-index:21;}
+					.mainAd .cn .cnft .navTab li a{ color:#777; text-decoration:none;}
+					.mainAd .cn .cnft .navTab li a:hover{text-decoration:none;}
+					.mainAd .navTab li a{display:block; overflow:hidden; white-space:nowrap;}
+					
+				.mainAd .navTab li.navWid2{width:309px;}
+				.mainAd .navTab li.left2{width:309px;}
+				.mainAd .navTab li.right2{width:309px; border-right:none;}
+				.mainAd .navTab li.left2.current{ border-left:none;}
+				.mainAd .navTab li.navWid2 span.navTabArrow{left:154px;}
+				.mainAd .navTab li.navWid3{width:205px;}
+				.mainAd .navTab li.left3{width:205px;}
+				.mainAd .navTab li.right3{width:206px; border-right:none;}
+				.mainAd .navTab li.left3.current{ border-left:none;}
+				.mainAd .navTab li.navWid3 span.navTabArrow{left:102px;}
+				
+				.mainAd .navTab li.navWid4{width:154px;}
+				.mainAd .navTab li.left4{width:154px;}
+				.mainAd .navTab li.right4{width:154px; border-right:none;}
+				.mainAd .navTab li.left4.current{ border-left:none;}
+				.mainAd .navTab li.navWid4 span.navTabArrow{left:74px;}
+				
+				.mainAd .navTab li.navWid5{width:123px;}
+					.mainAd .navTab li.navWid5 a{width:114px;}
+				.mainAd .navTab li.left5{width:123px;}
+				.mainAd .navTab li.right5{width:123px; border-right:none;}
+				.mainAd .navTab li.left5.current{ border-left:none;}
+				.mainAd .navTab li.navWid5 span.navTabArrow{left:59px;}
+				
+				.mainAd .navTab li.navWid6{width:102px;}
+					.mainAd .navTab li.navWid6 a{width:93px;}
+				.mainAd .navTab li.left6{width:103px;}
+				.mainAd .navTab li.right6{width:103px; border-right:none;}
+				.mainAd .navTab li.left6.current{ border-left:none;}
+				.mainAd .navTab li.navWid6 span.navTabArrow{left:47px;}
+				
+			
+				
+						.mainAd .navTab li.navWid7{width:130px;}
+					.mainAd .navTab li.navWid7 a{width:130px;}
+				.mainAd .navTab li.left7{width:130px;}
+				.mainAd .navTab li.right7{width:125px; border-right:none;}
+				.mainAd .navTab li.left7.current{ border-left:none;}
+				.mainAd .navTab li.navWid7 span.navTabArrow{left:39px;}
+				
+				
+				.mainAd .navTab li.navWid8{width:76px;}
+					.mainAd .navTab li.navWid8 a{width:67px;}
+				.mainAd .navTab li.left8{width:78px;}
+				.mainAd .navTab li.right8{width:78px; border-right:none;}
+				.mainAd .navTab li.left8.current{ border-left:none;}
+				.mainAd .navTab li.navWid8 span.navTabArrow{left:34px;}
+					
+				.mainAd .navTab li.current{ border-color:#470;  background:url(../image/bg.gif) left -1135px repeat-x;}
+					.mainAd .cn .cnft .navTab li.current a{ color:#fff;}
+					.mainAd .navTab li.current .navTabArrow{ position:absolute; width:9px; height:6px; left:62px; top:-6px; background:url(../image/bg.gif) left -1217px no-repeat;}
+					.mainAd .navTab li.current .navTabCorL{ width:5px; hegith:32px; left:0; top:0; background:url(../image/bg.gif) left -1093px no-repeat; z-index:-1;}
+					.mainAd .navTab li.current .navTabCorR{ width:7px; hegith:32px; right:0; top:0; background:url(../image/bg.gif) -5px -1093px no-repeat;}
+
+		.mainAd .ft{ z-index:11;top:-3px;}
+
+/*=
+	首页  中间 三大推荐商品
+--------------------------------------------------------------------------------------------------------------------------------*/
+.tagGoods{}
+	.tagGoods .hd{ z-index:39;}
+	.tagGoods .cn{height:585px; overflow:hidden; margin-top:-5px; z-index:40;}
+	.tagGoods .cn .cnhd,.tagGoods .cnhd ul,.tagGoods .cnhd li,.tagGoods .cnhd li a{ z-index:40;}
+	.tagGoods .cn .cnhd{ padding-right:0;}
+		.tagGoods .cnhd ul{ height:33px; line-height:33px; background:url(../image/bg.gif) left -1275px repeat-x;}
+			.tagGoods .cnhd li{ float:left; font-size:14px; font-weight:bold; background:url(../image/bg.gif) right -1458px no-repeat; cursor:pointer;}
+				.tagGoods .cnhd li a{color:#555;}
+			.tagGoods .cnhd li.first{ padding-left:0;}
+			.tagGoods .cnhd li.last{ background:none;}
+				.tagGoods .cnhd li a{ float:left; padding:0 16px; }
+				.tagGoods .cnhd li a:hover{text-decoration:none;}
+					.tagGoods .cnhd span{ float:none;}
+
+		.tagGoods .cnhd li.cur{ padding-right:0; background:none;}
+			.tagGoods .cnhd li.cur a{ position:relative; margin-left:-1px;  background:url(../image/bg.gif) left -1393px repeat-x; color:#470;}
+				.tagGoods .cnhd li.cur a:hover,.tagGoods .cnhd li.cur a:visited,.tagGoods .cnhd li.cur a:active{text-decoration:none;}
+			.tagGoods .cnhd li.cur a .tagTagcorL{left:0;top:0; width:5px; height:33px; background:url(../image/bg.gif) left -1339px no-repeat;}
+			.tagGoods .cnhd li.cur a .tagTagcorR{right:0;top:0; width:7px; height:33px; background:url(../image/bg.gif) -5px -1339px no-repeat;}
+				
+				.tagGoods .cnhd li.cur a.first{margin-left:0;border-right:1px solid #d3e5fd;}
+				.tagGoods .cnhd li.cur a.second{border-right:1px solid #d3e5fd; border-left:1px solid #d3e5fd;}
+				.tagGoods .cnhd li.cur a.last{border-right:1px solid #d3e5fd; border-left:1px solid #d3e5fd;}
+	
+	.tagGoods .cncn{ padding:10px 10px 4px; background:#fff;}
+		.tagGoods .cncn ul{ padding:21px 0 0 10px;}
+		.tagGoods .cncn li{ float:left; padding:0 10px 10px 0; width:238px; height:258px;}
+			.tagGoods .cncn .goodsCard{}
+				.tagGoods .goodsCard img{}
+				.tagGoods .goodsCard .goodsName h4{line-height:20px; height:20px; overflow:hidden;}
+				.tagGoods .cncn .buyfree{margin-left:75px;}
+/*=
+	首页  中间底端 liba学堂
+--------------------------------------------------------------------------------------------------------------------------------*/
+.libaSchool{}
+	.libaSchool .cn{ height:288px; overflow:hidden;}
+	.libaSchool .cn .cncn{ padding:0 0 10px 27px;}
+		.libaSchool .cn .ulCn{ padding-right:1px;}
+	.libaSchool .half{ }
+		.libaSchool .half li{ width:202px; float:left; padding:0 0 0 8px; margin-right:26px; _margin-right:15px; line-height:33px; height:33px; overflow:hidden; border-bottom:1px dashed #dcdcdc; background:url("../image/bg.gif") left -797px no-repeat;}
+		.libaSchool .half li.current{ padding:0; width:210px; height:110px; border-bottom:none; background:none;}
+			.libaSchool .half li.current img { width:210px; height:100px;}
+/*=
+	首页  中间 体验中心
+--------------------------------------------------------------------------------------------------------------------------------*/
+.expr{ margin-bottom:7px;}
+	.expr .hd{ z-index:29;}
+	.expr .cn{ height:142px; overflow:hidden; margin-top:-4px; z-index:30;}
+		.expr .cn .cncn{ padding:1px;}
+			.expr img{ width:504px; height:140px;}
+	.expr .ft{ top:-3px; z-index:28;}
+
+/*=
+	商城改版css sprite2011/07/28
+--------------------------------------------------------------------------------------------------------------------------------*/
+	.surprise_icon,
+	.page_prev,
+	.page_next{background:url("../image/newIcon.gif") no-repeat;}
+	
+/*=
+	每日惊喜
+--------------------------------------------------------------------------------------------------------------------------------*/
+	.surprise{}
+		.surprise .cn{height:284px;overflow:hidden;}
+		.surprise .cn .imgPan{width:171px;height:171px;}
+		.surprise .cn li{width:177px;float:left;margin:0 15px 0 10px;display:inline;}
+		.surprise .cn li .goodsImg.widhm{width:173px;height:173px;}
+			.surprise .cn .cncn{padding-right:0;}
+			.surprise div.hd{overflow:visible;}
+			.surprise .surprise_icon{width:36px;height:40px;position:absolute;background-position:-9px -64px;left:17px;top:-8px;}
+			.surprise h2{margin-left:50px;}
+			.surprise .subject .priceInfo{height:36px;overflow:hidden;}
+
+/*=
+	销量冠军、方块促销、热卖排行
+--------------------------------------------------------------------------------------------------------------------------------*/
+.saleChampion,
+.crazyPromotion,
+.itemList,
+.page_prev,
+.product_container,
+.page_next{float:left;display:inline;}
+.page_prev,
+.page_next{width:12px;height:22px;text-indent:-9999px;margin-top:68px;}
+.crazyPromotion .hd{width:825px;}
+.page_next{background-position:-260px 0;margin-left:12px;}
+.page_prev{background-position:-248px 0;margin-left:8px;}
+.page_next:hover{background-position:-260px -22px;}
+.page_prev:hover{background-position:-248px -22px;}
+a.page_prev_dis,
+a.page_prev_dis:hover{background-position:-248px -44px;cursor:not-allowed;}
+a.page_next_dis,
+a.page_next_dis:hover{background-position:-260px -44px;cursor:not-allowed;}
+.saleChampion{width:170px;overflow:hidden;}
+.saleChampion .sideGdCard .imgPan{width:128px;height:210px;}
+.saleChampion ul{margin:13px 0 0 19px;}
+.saleChampion .sideGdCard .textB{width:127px;}
+.crazyPromotion{height:309px;overflow:hidden;}
+.productList .tagGoods .cn{height:315px;width:823px;overflow:hidden;}
+	.productList .proBox  {margin:0;}
+	.productList  .hd{overflow:visible;}
+	.productList .surprise_icon{width:36px;height:40px;overflow:hidden;position:absolute;top:-8px;left:9px;}
+	.productList .cnhd h2{padding-left:48px;}
+	.chufang .surprise_icon{background-position:-6px -124px;}
+	.weisheng .surprise_icon{background-position:-61px -125px;}
+	.kewo .surprise_icon{background-position:-117px -125px;}
+	.menchuang .surprise_icon{background-position:-221px -123px;}
+	.shuidian .surprise_icon{background-position:-271px -123px;}
+	.zhineng .surprise_icon{background-position:-169px -125px;}
+	.jujia .surprise_icon{background-position:-323px -125px;}
+	.product_container{width:575px;_width:576px;height:270px;overflow:hidden;position:relative;}
+		.product_container ul{width:40000px;}
+		.product_container .sideGdCard .imgPan{width:127px;height:127px;}
+		.product_container .imgPan .protime{width:131px;padding:0;text-align:center;_margin-bottom:-1px}
+		.tagGoods .cncn .product_container  li{width:136px;padding-right:8px;}
+		.tagGoods .cncn .product_container ul{padding-top:14px;}
+		
+		.productList div.crazyPromotion{margin-top:-35px;}
+		.productList div.crazyPromotion .cncn{background:none;}
+		.productList div.crazyPromotion .cncn .m-c{background:none;width:629px;float:left;}
+		.crazyPromotion .icons span.buyfree{margin:0;}
+		.crazyPromotion .cnhd .promotion_activity{background:none;float:right;font-size:12px;font-weight:normal;}
+		.crazyPromotion .cnhd .promotion_activity a{color:#1155AA;padding:0;margin-right:10px;}
+		.crazyPromotion .cnhd .promotion_activity a:focus,
+		.crazyPromotion .cnhd .promotion_activity a:hover, 
+		.crazyPromotion .cnhd .promotion_activity a:active {
+										color: #558800;
+										text-decoration: underline;
+									}
+		.productList div.crazyPromotion .cncn .itemList{margin:-6px 0 0 1px;float:left;}
+		.productList div.crazyPromotion .cncn .itemList ul{padding-left:12px;}
+		.productList div.crazyPromotion .cncn .itemList li{width:170px;overflow:hidden;line-height:25px;height:100%;padding-right:0;float:none;padding-bottom:0;}
+		.productList div.crazyPromotion .cncn .itemList .article{padding-left:8px;background:url("../image/bg.gif") no-repeat scroll left -799px transparent;}
+		.productList div.crazyPromotion .cncn .itemList .pic{height:100px;overflow:hidden;margin-bottom:8px;}
+		div.crazyPromotion .cnhd li{background:none;}
+		div.crazyPromotion .cnhd li.cur a{border-top:1px solid #d5e3fe;height:32px;overflow:hidden;}
+		div.crazyPromotion .hd{background:url("../image/new_hd_bg.gif") repeat-x;}
+		div.crazyPromotion .cn{margin-top:-6px;}
+		div.crazyPromotion .cn{background:url("../image/new_con_bg.gif") -1px 0 no-repeat;border:none;padding:0 2px 0 1px;}
+		div.crazyPromotion  .hd .conerR{background:url("../image/new_corner.gif") no-repeat;right:-2px;}
+		div.productList .textB h4{height:36px;}
+		div.productList  .textB .des{display:none;}
+		
+/*=
+	推荐品牌
+--------------------------------------------------------------------------------------------------------------------------------*/
+div.brand_page .cn{height:100%;}
+div.brand_page .cnhd li{background:none;}
+div.brand_page .cncn li{width:140px;height:100%;padding-right:27px;}
+div.brand_page .cncn li.last{width:140px;height:100%;padding-right:0;}
+div.brand_page .cncn li p{text-align:center;line-height:30px;}
+div.brand_page .cnhd li a{color:#427800;}
+div.brand_page .cnhd li a:focus,
+div.brand_page .cnhd li a:hover, 
+div.brand_page .cnhd li a:active {
+								color: #427800;
+								text-decoration: underline;
+							}
+
+
+/*=
+	促销专区
+--------------------------------------------------------------------------------------------------------------------------------*/
+.pro_ad .cn{padding:10px 0;}
+.pro_ad .page_next{margin-left:9px;}
+.pro_ad .jMoveItem{float:left;width:150px;height:150px;margin-right:8px;overflow:hidden;}
+.pro_ad_container{float:left;width:940px;overflow:hidden;margin-left:9px;}
+.pro_ad_container ul{width:100000px}
+div.pro_ad .hd{height:0;border-top:1px solid #ddd;width:998px;}
+.proBox .Filter .filter-content{width:765px;}
+	.proBox .grid li{padding:14px 22px;}
+.proKey .input{float:left;margin-right:10px;width:210px;}
+
+
+/*=
+	品牌logo
+--------------------------------------------------------------------------------------------------------------------------------*/
+.brand_logo .hd{}
+.brand_logo .hd div{height:5px;background:#fff;margin-top:1px;}
+.brand_logo .cncn{width:976px;overflow:hidden;}
+.brand_logo .cncn ul{width:1050px;margin:5px 0;}
+.brand_logo .cncn li{float:left;margin-right:27px;display:inline;height:55px;width:140px;overflow:hidden;}
+
+
+/* 关闭公告 */
+.close_banner{height:421px;width:930px;margin:0 auto 20px auto;background:url("../image/banner.gif") no-repeat;position:relative;}
+	.close_banner a{display:block;position:absolute;width:128px;height:20px;left:154px;top:233px;}
