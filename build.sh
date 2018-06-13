@@ -125,6 +125,9 @@ case "$1" in
      #dockerize
      deploy
      ;;
+   "merge")
+     merge
+     ;;
    "test")
      runtest uttest
      ;;
