@@ -115,10 +115,6 @@ function tag() {
     ret=$?; if [[ $ret != 0 ]]; then return $ret; fi
     git push origin ${tag_new}
     ret=$?;if [[ $ret != 0 ]]; then return $ret; fi
-    echo "Save version."
-    echo ${tag_new} > version
-    ret=$?;return $ret
-
 }
 
 case "$1" in
@@ -153,7 +149,7 @@ case "$1" in
    *)
      echo "Missing a parameter! Please specify the correct build model! "
      echo "Usage:"
-     echo "${BASH_SOURCE[0]} build | docker | deploy | test | it"
+     echo "${BASH_SOURCE[0]} build | docker | deploy | test | it | merge | tag"
      echo "or"
      echo "${BASH_SOURCE[0]} docker [TARGET_DOCKERNAME]"
      echo ""
@@ -163,6 +159,8 @@ case "$1" in
      echo "\"deploy\" will push the docker image to nexus.viperbj.net."
      echo "\"test\" will perform UT test."
      echo "\"it\" will perform Integration test."
+     echo "\"merge\" is used to merge tip to master branch after build/UT/IT sucessfully."
+     echo "\"tag\" is used to tag master branch."
      echo "\"TARGET_DOCKERNAME\" is a custom docker image name, if you need."
 esac
 
