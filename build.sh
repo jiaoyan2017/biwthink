@@ -96,7 +96,7 @@ function dockerize() {
 }
 
 function merge() {
-    #pushd "$DIR"
+    pushd "$DIR"
     branch="$(git rev-parse HEAD)"
     local ret=$?; if [[ $ret != 0 ]]; then return $ret; fi
     git checkout master
@@ -110,7 +110,7 @@ function merge() {
 }
 
 function tag() {
-    tag_new=$2
+    tag_new="$@"
     git tag ${tag_new}
     ret=$?; if [[ $ret != 0 ]]; then return $ret; fi
     git push origin ${tag_new}
