@@ -109,6 +109,18 @@ function merge() {
     return $ret
 }
 
+function tag() {
+    tag_new=$2
+    git tag ${tag_new}
+    ret=$?; if [[ $ret != 0 ]]; then return $ret; fi
+    git push origin ${tag_new}
+    ret=$?;if [[ $ret != 0 ]]; then return $ret; fi
+    echo "Save version."
+    echo ${tag_new} > version
+    ret=$?;return $ret
+
+}
+
 case "$1" in
    "build")
      build_m
@@ -127,6 +139,9 @@ case "$1" in
      ;;
    "merge")
      merge
+     ;;
+   "tag")
+     tag
      ;;
    "test")
      runtest uttest
