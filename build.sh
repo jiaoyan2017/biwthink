@@ -141,7 +141,8 @@ case "$1" in
      merge
      ;;
    "tag")
-     tag
+     shift
+     tag "$@"
      ;;
    "test")
      runtest uttest
