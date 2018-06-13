@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /bin/bash -x
 #set -e
 
 # The build image for build
@@ -101,7 +101,7 @@ function merge() {
     local ret=$?; if [[ $ret != 0 ]]; then return $ret; fi
     git checkout master
     ret=$?; if [[ $ret != 0 ]]; then return $ret; fi
-    git merge --ff-only "$branch"
+    git merge --no-ff "$branch"
     ret=$?; if [[ $ret != 0 ]]; then return $ret; fi
     git push origin master
     ret=$?
