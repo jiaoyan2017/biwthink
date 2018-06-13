@@ -96,7 +96,7 @@ function dockerize() {
 }
 
 function merge() {
-    pushd "$DIR"
+    #pushd "$DIR"
     branch="$(git rev-parse HEAD)"
     local ret=$?; if [[ $ret != 0 ]]; then return $ret; fi
     git checkout master
@@ -105,7 +105,7 @@ function merge() {
     ret=$?; if [[ $ret != 0 ]]; then return $ret; fi
     git push origin master
     ret=$?
-    popd
+    #popd
     return $ret
 }
 
