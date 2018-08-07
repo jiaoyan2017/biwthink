@@ -123,6 +123,7 @@ case "$1" in
      ;;
    "ba")
      echo "Building..."
+     echo "Build step 'Execute shell' marked build as failure."
      ;;
    "docker")
      #build_m
