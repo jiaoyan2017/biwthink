@@ -1,5 +1,3 @@
-# Test-Merge-2
-
 #! /bin/bash -x
 #set -e
 
@@ -7,31 +5,27 @@
 BUILD_IMAGE="nexus.viperbj.net/pulsar-build:latest"
 
 # Binary to generate
-BIANARY_NAME="rio-pulsar-segpoller"
+BIANARY_NAME="biwthink"
 
 
 # Name of the package we are building
-#PKG_NAME="nexus.viperbj.net/rio-pulsar-segpoller"
+#PKG_NAME="nexus.viperbj.net/rio-pulsar-decoder"
 
 # SOURCE_CODE to build
-# SOURCE_CODE="main.go"
+SOURCE_CODE="main.go"
 
 # Current Working Directory
 DIR=$(basename "$(pwd)")
 
+# 
+NO_COMMIT=/tmp/no_commit_${BIANARY_NAME}
+TAG_NEW=/tmp/tag_new_${BIANARY_NAME}
+
 # Docker image to generate
-if [ $1="docker" ] && [ -z $2 ]; then
-   DOCKER_IMAGE="nexus.viperbj.net:9082/segpoller:latest"
+if ([ $1="docker" ] || [ $1="deploy" ]) && [ -z $2 ]; then
+   DOCKER_IMAGE="nexus.viperbj.net:9082/$BIANARY_NAME:latest"
 else
-   DOCKER_IMAGE=$2
-fi
-
-# Build log
-BUILD_LOG=/tmp/build.log
-
-# Remove the old build.log
-if [ -e $BUILD_LOG ]; then
-   rm -f $BUILD_LOG
+   DOCKER_IMAGE="nexus.viperbj.net:9082/$BIANARY_NAME:$2"
 fi
 
 # Get GOPATH in user's environment if it's not /go.
@@ -40,6 +34,7 @@ if [ -z $USER_GOPATH ]; then
    USER_GOPATH=${GOPATH%%:*}
 fi
 
+
 # build_m is a normal build without automatical deps fetching.
 function build_m() {
    echo "Start building ..."
@@ -47,10 +42,11 @@ function build_m() {
         --privileged=true --rm \
         -v /tmp:/tmp \
         -v ~/.ssh:/root/.ssh \
+        -v /var/run/docker.sock:/var/run/docker.sock \
         -v $USER_GOPATH/src:/go/src/github.comcast.com/viper-cog/$DIR/vendor \
         -v $(pwd):/go/src/github.comcast.com/viper-cog/$DIR \
         -w /go/src/github.comcast.com/viper-cog/$DIR \
-        "$BUILD_IMAGE" /bin/sh -c "go build $SOURCE_CODE -o $BIANARY_NAME 2>&1 | tee $BUILD_LOG"
+        "$BUILD_IMAGE" "$@"
 }
 
 
@@ -63,8 +59,10 @@ function runtest() {
         --privileged=true --rm \
         -e GO_COVERAGE=true \
         -e BUILD_INFO_FILE=BuildInfo \
+        -e HOST_GOPATH=$USER_GOPATH \
         -v /tmp:/tmp \
         -v ~/.ssh:/root/.ssh \
+        -v /var/run/docker.sock:/var/run/docker.sock \
         -v $USER_GOPATH/src:/go/src/github.comcast.com/viper-cog/$DIR/vendor \
         -v $(pwd):/go/src/github.comcast.com/viper-cog/$DIR  "$BUILD_IMAGE" /bin/sh \
         -c "cd /go/src/github.comcast.com/viper-cog/$DIR; $cmd" 
@@ -98,21 +96,54 @@ function dockerize() {
 }
 
 function merge() {
-    pushd "$DIR"
-    branch="$(git rev-parse HEAD)"
+    rm -f $NO_COMMIT
+    #branch="$(git rev-parse HEAD)"
+    git checkout tip
+    local ret=$?; if [[ $ret != 0 ]]; then return $ret; fi
+    git pull origin tip
     local ret=$?; if [[ $ret != 0 ]]; then return $ret; fi
     git checkout master
     ret=$?; if [[ $ret != 0 ]]; then return $ret; fi
-    git merge --no-ff "$branch"
-    ret=$?; if [[ $ret != 0 ]]; then return $ret; fi
-    git push origin master
-    ret=$?
-    popd
-    return $ret
+    NOMERGED="$(git branch --no-merged | grep -o tip)"
+    if [ "$NOMERGED" = "tip" ]; then
+      git pull origin master
+      ret=$?; if [[ $ret != 0 ]]; then return $ret; fi
+      git merge tip
+      ret=$?; if [[ $ret != 0 ]]; then return $ret; fi
+      git push origin master
+      ret=$?
+      if [ $ret != 0 ]; then
+        echo ">>>Merge FAIL from tip to master.<<<"
+        return $ret
+      else
+        echo ">>>Merge Complete successfully.<<<"
+        return $ret
+      fi
+    else
+      echo ">>>No commit to merge with tip. Exit ..."
+      touch $NO_COMMIT
+      ret=0
+      return $ret
+    fi
 }
 
 function tag() {
-    tag_new="$@"
+    tag="$@"
+    if [ -z $tag ]; then
+      echo "No new tag provided. Use previous tag."
+      tag=$(git tag |  sort -n -r | sed -n '1,1p')
+      if [ -z $tag ]; then
+        echo "Can't get previous tag, please provide a tag."
+        echo "Example:"
+        echo "${BASH_SOURCE[0]} tag 1.0.0"
+        return 1
+      fi
+    fi
+    ver=$(echo $tag | awk -F'_' '{print $1}')
+    seq=$(echo $tag | awk -F'_' '{print $2}')
+    seq_new=$(echo $((10#${seq}+1)) | awk '{printf("%03d",$0)}')
+    tag_new=${ver}_${seq_new}
+    echo $tag_new > $TAG_NEW     
     git tag ${tag_new}
     ret=$?; if [[ $ret != 0 ]]; then return $ret; fi
     git push origin ${tag_new}
@@ -121,11 +152,9 @@ function tag() {
 
 case "$1" in
    "build")
-     build_m
-     ;;
-   "ba")
-     echo "Building..."
-     echo "Build step 'Execute shell' marked build as failure."
+     # get_common
+     # get_fca
+     build_m "$@" $BIANARY_NAME $SOURCE_CODE
      ;;
    "docker")
      #build_m
@@ -153,8 +182,9 @@ case "$1" in
      echo "Missing a parameter! Please specify the correct build model! "
      echo "Usage:"
      echo "${BASH_SOURCE[0]} build | docker | deploy | test | it | merge | tag"
-     echo "or"
-     echo "${BASH_SOURCE[0]} docker [TARGET_DOCKERNAME]"
+     echo "${BASH_SOURCE[0]} merge [TAG]"
+     echo "${BASH_SOURCE[0]} tag [TAG]"
+     echo "${BASH_SOURCE[0]} docker | deploy [TAG]"
      echo ""
      echo "The first parameter is required. The second is optional."
      echo "\"build\" will build the binary. Please build binary BEFORE docker."
@@ -162,8 +192,7 @@ case "$1" in
      echo "\"deploy\" will push the docker image to nexus.viperbj.net."
      echo "\"test\" will perform UT test."
      echo "\"it\" will perform Integration test."
-     echo "\"merge\" is used to merge tip to master branch after build/UT/IT sucessfully."
+     echo "\"merge\" is used to merge tip to master branch after build/UT/IT sucessfully. And tag master."
      echo "\"tag\" is used to tag master branch."
-     echo "\"TARGET_DOCKERNAME\" is a custom docker image name, if you need."
+     echo "\"TAG\" is a master branch tag and a custom docker image tag."
 esac
-
