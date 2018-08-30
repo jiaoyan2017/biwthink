@@ -5,7 +5,7 @@
 BUILD_IMAGE="nexus.viperbj.net/pulsar-build:latest"
 
 # Binary to generate
-BIANARY_NAME="rio-pulsar-decoder"
+BIANARY_NAME="biwthink"
 
 
 # Name of the package we are building
